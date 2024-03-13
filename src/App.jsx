@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     async function addText() {
       try {
-          await fetch("http://192.168.2.5:3000/add/text", {
+          await fetch("https://globalchatback-jemh.onrender.com/add/text", {
           method: "POST",
           body: inputValue,
         })
@@ -23,7 +23,7 @@ function App() {
 
     async function getText() {
       try {
-        const res = await fetch("http://192.168.2.5:3000/get/text", {
+        const res = await fetch("https://globalchatback-jemh.onrender.com/get/text", {
           method: "GET",
           mode: "cors",
         });
